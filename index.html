@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPA Dictionary</title>
+
+  <!-- Link to the CSS file -->
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Main container -->
+
+  <main>
+    <h1>SPA Dictionary</h1>
+
+    <!-- Search form -->
+
+    <form id="searchForm" aria-label="Search for a word">
+      <input 
+        type="text" 
+        id="wordInput" 
+        placeholder="Enter a word..." 
+        aria-label="Word input"
+        required>
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- Section to display results -->
+
+    <section id="results">
+      <h2 id="word"></h2>
+      <p id="phonetic"></p>
+      <button id="audioBtn" style="display:none;">Pronunciation</button>
+
+      <h3>Definitions</h3>
+      <ul id="definitions"></ul>
+
+      <h3>Synonyms</h3>
+      <p id="synonyms"></p>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
